@@ -1,0 +1,64 @@
+Name                          Purpose                                                           Java pattern or principle included
+MessagingFacade               Public entry point to the messaging subsystem; coordinates        Facade, Single responsibility
+                              validation, routing and sending
+
+SendResult                    Represents the result of a send operation, including response     Single responsibility
+                              code, message text, provider used, channels tried and total cost
+
+MessageSenderFactory          Creates concrete message sender instances for each channel        Factory, Open/Closed principle
+                              and provider (e.g. SMS, Email, Postal)
+
+IMessageSender                Interface for all message senders in the chain                    Single responsibility, Open/Closed principle
+
+BaseSender                    Abstract base class implementing common chain behaviour           Chain of Responsibility, Single responsibility
+                              (holding next sender and delegating on failure)
+
+TwilioSMSSender               Concrete SMS sender using the Twilio provider (stubbed with       Single responsibility, Open/Closed principle
+                              System.out.println and simulated failures/costs)
+
+CSoftSMSSender                Concrete SMS sender using the CSoft provider (stubbed with        Single responsibility, Open/Closed principle
+                              System.out.println and simulated failures/costs)
+
+SendGridEmailSender           Concrete email sender using a SendGrid‐like provider (stubbed     Single responsibility, Open/Closed principle
+                              with System.out.println and simulated failures/costs)
+
+SESEmailSender                Concrete email sender using an SES‐like provider (stubbed with    Single responsibility, Open/Closed principle
+                              System.out.println and simulated failures/costs)
+
+RoyalMailPostalSender         Concrete postal sender using a RoyalMail‐like provider (stubbed   Single responsibility, Open/Closed principle
+                              with System.out.println and simulated failures/costs)
+
+RoutingPolicy                 Encapsulates routing rules; decides the preferred order of        Single responsibility, Open/Closed principle
+                              channels and providers based on message type and urgency
+
+ChainBuilder                  Builds the chain of responsibility using RoutingPolicy and        Chain of Responsibility, Factory, Single responsibility
+                              MessageSenderFactory
+
+User                          Models an application user and aggregates all contact details     Single responsibility
+                              (email, phone number, postal address)
+
+EmailAddress                  Value object representing an email address                        Single responsibility
+
+PhoneNumber                   Value object representing a phone number                          Single responsibility
+
+PostalAddress                 Value object representing a postal address                        Single responsibility
+
+Message                       Base class (or interface) for messages to be sent                 Single responsibility, Open/Closed principle
+
+SMSMessage                    Concrete message type representing an SMS message                 Single responsibility, Open/Closed principle
+
+EmailMessage                  Concrete message type representing an email message               Single responsibility, Open/Closed principle
+
+PostalMessage                 Concrete message type representing a postal/letter message        Single responsibility, Open/Closed principle
+
+ContactValidator              Coordinates validation of a User’s contact details using          Single responsibility
+                              specialised validators
+
+EmailValidator                Validates the format of email addresses                           Single responsibility
+
+PhoneValidator                Validates the format of phone numbers                             Single responsibility
+
+PostcodeValidator             Validates the format of postal codes                              Single responsibility
+
+Main                          Program entry point; constructs the facade and dependencies       (Uses Facade, exercises Factory and
+                              and runs scenarios to test all features of the messaging system   Chain of Responsibility, demonstrates SRP/OCP)
