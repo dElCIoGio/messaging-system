@@ -1,19 +1,34 @@
 package main.java.messaging.validation;
 
+import java.util.regex.Pattern;
 import main.java.messaging.domain.PostalAddress;
 
 public class PostcodeValidator implements IValidator<PostalAddress> {
 
+    private static final String POSTCODE_REGEX =
+            "^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|" +
+                    "(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|" +
+                    "(([A-Za-z][0-9][A-Za-z])|" +
+                    "([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))" +
+                    "\\s?[0-9][A-Za-z]{2})$";
+
+    private static final Pattern POSTCODE_PATTERN = Pattern.compile(POSTCODE_REGEX);
+
     @Override
     public boolean validate(PostalAddress contactDetails) {
-        String regexPattern = "^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|"
-                + "(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|"
-                + "(([A-Za-z][0-9][A-Za-z])|"
-                + "([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))"
-                + "\\s?[0-9][A-Za-z]{2})$";
+        if (contactDetails == null) {
+            return false;
+        }
 
         String postcode = contactDetails.getPostalCode();
-        return postcode != null && postcode.matches(regexPattern);
+        if (postcode == null) {
+            return false;
+        }
+
+        return matchesPostcodePattern(postcode.trim());
     }
 
+    private boolean matchesPostcodePattern(String postcode) {
+        return POSTCODE_PATTERN.matcher(postcode).matches();
+    }
 }
