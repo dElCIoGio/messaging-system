@@ -1,10 +1,10 @@
-package main.java.messaging.routing;
+package messaging.routing;
 
-import main.java.messaging.domain.Message;
-import main.java.messaging.enums.Provider;
-import main.java.messaging.enums.Urgency;
-import main.java.messaging.factory.MessageSenderFactory;
-import main.java.messaging.sender.IMessageSender;
+import messaging.domain.Message;
+import messaging.enums.Provider;
+import messaging.enums.Urgency;
+import messaging.factory.MessageSenderFactory;
+import messaging.sender.IMessageSender;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package main.java.messaging.enums;
+package messaging.enums;
 
 public enum Urgency {
     LOW,

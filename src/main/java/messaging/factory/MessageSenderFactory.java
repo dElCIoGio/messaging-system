@@ -1,13 +1,13 @@
-package main.java.messaging.factory;
+package messaging.factory;
 
-import main.java.messaging.enums.Provider;
-import main.java.messaging.sender.IMessageSender;
-import main.java.messaging.sender.email.SESEmailSender;
-import main.java.messaging.sender.email.SendGridEmailSender;
-import main.java.messaging.sender.postal.RNGPostalSender;
-import main.java.messaging.sender.postal.RoyalMailPostalSender;
-import main.java.messaging.sender.sms.CSoftSMSSender;
-import main.java.messaging.sender.sms.TwilioSMSSender;
+import messaging.enums.Provider;
+import messaging.sender.IMessageSender;
+import messaging.sender.email.SESEmailSender;
+import messaging.sender.email.SendGridEmailSender;
+import messaging.sender.postal.RNGPostalSender;
+import messaging.sender.postal.RoyalMailPostalSender;
+import messaging.sender.sms.CSoftSMSSender;
+import messaging.sender.sms.TwilioSMSSender;
 
 public class MessageSenderFactory {
 

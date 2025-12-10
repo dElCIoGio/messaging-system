@@ -1,5 +1,5 @@
-package main.java.messaging.factory;
-import main.java.messaging.money.Money;
+package messaging.factory;
+import messaging.money.Money;
 import java.util.Currency;
 
 public class MoneyFactory {

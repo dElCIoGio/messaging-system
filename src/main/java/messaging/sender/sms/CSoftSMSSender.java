@@ -1,13 +1,13 @@
-package main.java.messaging.sender.sms;
+package messaging.sender.sms;
 
-import main.java.messaging.domain.Message;
-import main.java.messaging.domain.User;
-import main.java.messaging.enums.Channel;
-import main.java.messaging.enums.Provider;
-import main.java.messaging.enums.ResponseCode;
-import main.java.messaging.facade.SendResult;
-import main.java.messaging.money.Money;
-import main.java.messaging.sender.BaseSender;
+import messaging.domain.Message;
+import messaging.domain.User;
+import messaging.enums.Channel;
+import messaging.enums.Provider;
+import messaging.enums.ResponseCode;
+import messaging.facade.SendResult;
+import messaging.money.Money;
+import messaging.sender.BaseSender;
 
 import java.util.List;
 

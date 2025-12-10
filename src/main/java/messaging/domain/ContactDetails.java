@@ -1,4 +1,4 @@
-package main.java.messaging.domain;
+package messaging.domain;
 
 public interface ContactDetails {
 

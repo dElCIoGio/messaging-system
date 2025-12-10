@@ -1,4 +1,4 @@
-package main.java.messaging.validation;
+package messaging.validation;
 
 public interface IValidator<T> {
 

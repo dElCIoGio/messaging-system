@@ -1,8 +1,8 @@
-package main.java.messaging.domain;
+package messaging.domain;
 
-import main.java.messaging.enums.Channel;
-import main.java.messaging.enums.MessageType;
-import main.java.messaging.utils.UUIDHandler;
+import messaging.enums.Channel;
+import messaging.enums.MessageType;
+import messaging.utils.UUIDHandler;
 
 public class Message {
 

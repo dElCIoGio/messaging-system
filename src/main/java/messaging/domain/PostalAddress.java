@@ -1,6 +1,6 @@
-package main.java.messaging.domain;
+package messaging.domain;
 
-import main.java.messaging.validation.PostcodeValidator;
+import messaging.validation.PostcodeValidator;
 
 public class PostalAddress implements ContactDetails {
 

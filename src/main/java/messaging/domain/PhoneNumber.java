@@ -1,6 +1,6 @@
-package main.java.messaging.domain;
+package messaging.domain;
 
-import main.java.messaging.validation.PhoneValidator;
+import messaging.validation.PhoneValidator;
 
 public class PhoneNumber implements ContactDetails {
 

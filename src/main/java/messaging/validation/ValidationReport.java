@@ -1,4 +1,4 @@
-package main.java.messaging.validation;
+package messaging.validation;
 
 import java.util.ArrayList;
 import java.util.List;

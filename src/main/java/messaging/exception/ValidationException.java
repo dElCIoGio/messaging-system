@@ -1,4 +1,4 @@
-package main.java.messaging.exception;
+package messaging.exception;
 
 public class ValidationException extends RuntimeException {
 

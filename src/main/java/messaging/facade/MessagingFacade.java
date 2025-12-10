@@ -1,15 +1,15 @@
-package main.java.messaging.facade;
+package messaging.facade;
 
-import main.java.messaging.domain.Message;
-import main.java.messaging.domain.User;
-import main.java.messaging.enums.Channel;
-import main.java.messaging.enums.Provider;
-import main.java.messaging.enums.ResponseCode;
-import main.java.messaging.enums.Urgency;
-import main.java.messaging.routing.ChainBuilder;
-import main.java.messaging.sender.IMessageSender;
-import main.java.messaging.validation.ContactValidator;
-import main.java.messaging.validation.ValidationReport;
+import messaging.domain.Message;
+import messaging.domain.User;
+import messaging.enums.Channel;
+import messaging.enums.Provider;
+import messaging.enums.ResponseCode;
+import messaging.enums.Urgency;
+import messaging.routing.ChainBuilder;
+import messaging.sender.IMessageSender;
+import messaging.validation.ContactValidator;
+import messaging.validation.ValidationReport;
 
 import java.util.ArrayList;
 import java.util.List;
