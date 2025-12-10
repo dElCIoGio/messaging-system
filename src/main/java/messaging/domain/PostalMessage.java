@@ -1,6 +1,6 @@
-package main.java.messaging.domain;
-import main.java.messaging.enums.Channel;
-import main.java.messaging.enums.MessageType;
+package messaging.domain;
+import messaging.enums.Channel;
+import messaging.enums.MessageType;
 
 public class PostalMessage extends Message {
 

@@ -1,17 +1,17 @@
-package main.java.main;
+package main;
 
-import main.java.messaging.domain.*;
-import main.java.messaging.enums.*;
-import main.java.messaging.facade.MessagingFacade;
-import main.java.messaging.facade.SendResult;
-import main.java.messaging.factory.MessageSenderFactory;
-import main.java.messaging.money.Money;
-import main.java.messaging.routing.ChainBuilder;
-import main.java.messaging.routing.RoutingPolicy;
-import main.java.messaging.validation.ContactValidator;
-import main.java.messaging.validation.EmailValidator;
-import main.java.messaging.validation.PhoneValidator;
-import main.java.messaging.validation.PostcodeValidator;
+import messaging.domain.*;
+import messaging.enums.*;
+import messaging.facade.MessagingFacade;
+import messaging.facade.SendResult;
+import messaging.factory.MessageSenderFactory;
+import messaging.money.Money;
+import messaging.routing.ChainBuilder;
+import messaging.routing.RoutingPolicy;
+import messaging.validation.ContactValidator;
+import messaging.validation.EmailValidator;
+import messaging.validation.PhoneValidator;
+import messaging.validation.PostcodeValidator;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package main.java.messaging.validation;
+package messaging.validation;
 
 import java.util.regex.Pattern;
-import main.java.messaging.domain.PostalAddress;
+import messaging.domain.PostalAddress;
 
 public class PostcodeValidator implements IValidator<PostalAddress> {
 

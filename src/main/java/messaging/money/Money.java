@@ -1,4 +1,4 @@
-package main.java.messaging.money;
+package messaging.money;
 
 import java.util.Currency;
 

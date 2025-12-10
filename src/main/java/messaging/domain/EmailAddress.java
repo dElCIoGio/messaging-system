@@ -1,6 +1,6 @@
-package main.java.messaging.domain;
+package messaging.domain;
 
-import main.java.messaging.validation.EmailValidator;
+import messaging.validation.EmailValidator;
 
 public class EmailAddress implements ContactDetails {
 

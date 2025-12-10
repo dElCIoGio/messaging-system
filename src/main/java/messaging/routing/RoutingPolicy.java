@@ -1,9 +1,9 @@
-package main.java.messaging.routing;
+package messaging.routing;
 
-import main.java.messaging.domain.Message;
-import main.java.messaging.enums.MessageType;
-import main.java.messaging.enums.Provider;
-import main.java.messaging.enums.Urgency;
+import messaging.domain.Message;
+import messaging.enums.MessageType;
+import messaging.enums.Provider;
+import messaging.enums.Urgency;
 
 import java.util.ArrayList;
 import java.util.List;

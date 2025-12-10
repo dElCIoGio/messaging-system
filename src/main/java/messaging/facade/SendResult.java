@@ -1,10 +1,10 @@
-package main.java.messaging.facade;
+package messaging.facade;
 
-import main.java.messaging.domain.Message;
-import main.java.messaging.enums.Channel;
-import main.java.messaging.enums.Provider;
-import main.java.messaging.enums.ResponseCode;
-import main.java.messaging.money.Money;
+import messaging.domain.Message;
+import messaging.enums.Channel;
+import messaging.enums.Provider;
+import messaging.enums.ResponseCode;
+import messaging.money.Money;
 
 import java.util.ArrayList;
 import java.util.List;

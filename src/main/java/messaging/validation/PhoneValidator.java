@@ -1,7 +1,7 @@
-package main.java.messaging.validation;
+package messaging.validation;
 
 import java.util.regex.Pattern;
-import main.java.messaging.domain.PhoneNumber;
+import messaging.domain.PhoneNumber;
 
 public class PhoneValidator implements IValidator<PhoneNumber> {
 

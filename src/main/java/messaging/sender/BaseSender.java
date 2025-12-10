@@ -1,10 +1,10 @@
-package main.java.messaging.sender;
+package messaging.sender;
 
-import main.java.messaging.domain.Message;
-import main.java.messaging.domain.User;
-import main.java.messaging.enums.Channel;
-import main.java.messaging.factory.MoneyFactory;
-import main.java.messaging.money.Money;
+import messaging.domain.Message;
+import messaging.domain.User;
+import messaging.enums.Channel;
+import messaging.factory.MoneyFactory;
+import messaging.money.Money;
 
 public abstract class BaseSender implements IMessageSender {
 

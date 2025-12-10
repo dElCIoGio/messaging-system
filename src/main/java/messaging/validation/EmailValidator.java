@@ -1,7 +1,7 @@
-package main.java.messaging.validation;
+package messaging.validation;
 
 import java.util.regex.Pattern;
-import main.java.messaging.domain.EmailAddress;
+import messaging.domain.EmailAddress;
 
 public class EmailValidator implements IValidator<EmailAddress> {
 

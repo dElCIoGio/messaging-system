@@ -1,7 +1,7 @@
-package main.java.messaging.validation;
+package messaging.validation;
 
-import main.java.messaging.domain.User;
-import main.java.messaging.exception.ValidationException;
+import messaging.domain.User;
+import messaging.exception.ValidationException;
 
 public class ContactValidator {
 

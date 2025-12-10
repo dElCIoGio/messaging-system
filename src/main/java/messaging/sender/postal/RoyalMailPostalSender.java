@@ -1,12 +1,12 @@
-package main.java.messaging.sender.postal;
+package messaging.sender.postal;
 
-import main.java.messaging.domain.Message;
-import main.java.messaging.domain.User;
-import main.java.messaging.enums.Channel;
-import main.java.messaging.enums.Provider;
-import main.java.messaging.enums.ResponseCode;
-import main.java.messaging.facade.SendResult;
-import main.java.messaging.sender.BaseSender;
+import messaging.domain.Message;
+import messaging.domain.User;
+import messaging.enums.Channel;
+import messaging.enums.Provider;
+import messaging.enums.ResponseCode;
+import messaging.facade.SendResult;
+import messaging.sender.BaseSender;
 
 import java.util.List;
 
