@@ -10,7 +10,7 @@ MessageSenderFactory          Creates concrete message sender instances for each
 
 MoneyFactory                  Creates Money value objects in specific currencies for senders    Factory, Single responsibility
 
-RoutingPolicy                 Encapsulates routing rules; decides the preferred order of        Single responsibility, Open/Closed principle
+RoutingPolicy                 Encapsulates routing rules. It decides the preferred order of     Single responsibility, Open/Closed principle
                               channels and providers based on message type and urgency
 
 ChainBuilder                  Builds the chain of responsibility using RoutingPolicy and        Chain of Responsibility, Factory, Single responsibility
@@ -18,23 +18,23 @@ ChainBuilder                  Builds the chain of responsibility using RoutingPo
 
 IMessageSender                Interface for all message senders in the chain                    Single responsibility, Open/Closed principle
 
-BaseSender                    Abstract base class implementing common chain behaviour           Chain of Responsibility, Single responsibility
+BaseSender                    Abstract base class implementing common behaviour                 Chain of Responsibility, Single responsibility
                               (holding next sender, channel and cost)
 
-TwilioSMSSender               Concrete SMS sender using the Twilio provider (stubbed with       Single responsibility, Open/Closed principle, Chain of Responsibility
-                              System.out.println and simulated failures/costs)
+TwilioSMSSender               Concrete SMS sender using the Twilio provider                     Single responsibility, Open/Closed principle, Chain of Responsibility
 
-CSoftSMSSender                Concrete SMS sender using the CSoft provider (stubbed with        Single responsibility, Open/Closed principle, Chain of Responsibility
-                              System.out.println and simulated failures/costs)
 
-SendGridEmailSender           Concrete email sender using a SendGrid-like provider (stubbed     Single responsibility, Open/Closed principle, Chain of Responsibility
-                              with System.out.println and simulated failures/costs)
+CSoftSMSSender                Concrete SMS sender using the CSoft provider                      Single responsibility, Open/Closed principle, Chain of Responsibility
 
-SESEmailSender                Concrete email sender using an SES-like provider (stubbed with    Single responsibility, Open/Closed principle, Chain of Responsibility
-                              System.out.println and simulated failures/costs)
 
-RoyalMailPostalSender         Concrete postal sender using a RoyalMail-like provider (stubbed   Single responsibility, Open/Closed principle, Chain of Responsibility
-                              with System.out.println and simulated failures/costs)
+SendGridEmailSender           Concrete email sender using a SendGrid-like provider              Single responsibility, Open/Closed principle, Chain of Responsibility
+
+
+SESEmailSender                Concrete email sender using an SES-like provider                  Single responsibility, Open/Closed principle, Chain of Responsibility
+
+
+RoyalMailPostalSender         Concrete postal sender using a RoyalMail-like provider            Single responsibility, Open/Closed principle, Chain of Responsibility
+
 
 RNGPostalSender               Concrete postal sender that randomly fails to demonstrate         Single responsibility, Open/Closed principle, Chain of Responsibility
                               fallback handling and cost calculation
